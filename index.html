@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript③</title>
+  <style>
+    .todo-list {
+      margin-bottom: 20px;
+    }
+    .button {
+      margin-right: 10px;
+    }
+    .task-item {
+      margin-bottom: 5px;
+    }
+    .task-item button {
+      margin-left: 10px;
+    }
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h2>ToDoリスト</h2>
+  <div>
+    <input type="radio" id="all" name="todo" checked>
+    <label for="all">全て</label>
+    <input type="radio" id="doing" name="todo">
+    <label for="doing">作業中</label>
+    <input type="radio" id="done" name="todo">
+    <label for="done">完了</label>
+  </div>
+  <div>
+  <table id="todoTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>コメント</th>
+        <th>状態</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ToDoリストがここに入る -->
+    </tbody>
+  </table>
+  </div>
+  <div>
+    <h2>新規タスクの追加</h2>
+    <input type="text" id="addTask">
+    <button id="addButton">追加</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
